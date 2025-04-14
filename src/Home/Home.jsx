@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../../assets/img/starter.png";
+import headerImg from "../../assets/img/bannerPost.webp";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 

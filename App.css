@@ -260,14 +260,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 
+/* .banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("./assets/img/BG_KYS.jpeg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/water2_bkg.jpg");
+  position: relative; /* Make sure the pseudo-element is positioned relative to the banner */
+  background-image: url("./assets/img/BG_KYS.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Reduced opacity for better visibility of content */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.banner > * {
+  position: relative;
+  z-index: 2; /* Make sure the content inside the banner is above the overlay */
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
