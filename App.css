@@ -285,18 +285,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.2
-  ); /* Reduced opacity for better visibility of content */
-  z-index: 1; /* Ensure the overlay is above the background image */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .banner > * {
   position: relative;
-  z-index: 2; /* Make sure the content inside the banner is above the overlay */
+  z-index: 2;
 }
 
 .banner .tagline {
